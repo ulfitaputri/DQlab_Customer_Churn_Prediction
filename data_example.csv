@@ -1,0 +1,6 @@
+﻿gender;SeniorCitizen;Partner;tenure;PhoneService;StreamingTV;InternetService;PaperlessBilling;MonthlyCharges
+Female;Yes;Yes;10;Yes;No;Yes;No;100
+Male;No;No;20;Yes;Yes;Yes;Yes;50
+Male;Yes;Yes;100;Yes;Yes;Yes;Yes;150
+Male;No;No;27;Yes;Yes;Yes;Yes;79
+Male;Yes;Yes;110;Yes;Yes;Yes;Yes;130
