@@ -24,20 +24,20 @@ def main():
     st.title("DQLab Telco Customer Churn Prediction")
     st.header("Customer Data Input")
     if add_selectbox == "Online":
-        gender = st.radio("**Customer's gender identity**", ("Female", "Male"))
-        SeniorCitizen = st.radio("**Is the customer a senior citizen?**", ("Yes", "No"))
-        Partner = st.radio("**Does the customer have a partner?**", ("Yes", "No"))
+        gender = st.selectbox("**Customer's gender identity**", ("Female", "Male"))
+        SeniorCitizen = st.selectbox("**Is the customer a senior citizen?**", ("Yes", "No"))
+        Partner = st.selectbox("**Does the customer have a partner?**", ("Yes", "No"))
         tenure = st.number_input("**Tenure (in month)**", 0, 130, 0)
-        PhoneService = st.radio(
+        PhoneService = st.selectbox(
             "**Does the customer have a phone service?**", ("Yes", "No")
         )
-        StreamingTV = st.radio(
+        StreamingTV = st.selectbox(
             "**Does the customer have a streaming TV?**", ("Yes", "No")
         )
-        InternetService = st.radio(
+        InternetService = st.selectbox(
             "**Does the customer have an interner service**", ("Yes", "No")
         )
-        PaperlessBilling = st.radio(
+        PaperlessBilling = st.selectbox(
             "**Does the customer have paperless billing?**", ("Yes", "No")
         )
         MonthlyCharges = st.number_input("**Customer's monthly charges**", 0, 170, 0)
@@ -123,6 +123,13 @@ def main():
                         2,
                     )
                     st.success(f"**Churn Rate :** {churn_rate}%")
+                    csv = convert_df(new_data)
+                    st.download_button(
+                        label="Download Data",
+                        data=csv,
+                        file_name="customer_churn.csv",
+                        mime="text/csv",
+                    )
 
 
 if __name__ == "__main__":
