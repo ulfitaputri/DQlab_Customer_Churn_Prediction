@@ -1,9 +1,18 @@
-Customer Churn Prediction using Machine Learning 
+**Customer Churn Prediction using Machine Learning**
 
-This project is a DQLAB project. The purpose of this project is to predict customer churn using machine learning. Based on the modeling that has been done using Logistic Regression, Random Forest and Extreme Gradient Boost, it can be concluded that the best model to predict customer churn is using Logistic Regression. This is because the performance of the Logistic Regression model tends to predict equally well in the training and testing phases, while other models tend to over-fit in performance.
+This project is from the industrial applicationts class at Academy DQLAB. 
+
+The purpose of this project is to predict customer churn at DQlab Telco using machine learning. 
+
+**Project Steps**
+1. Perform Exploratory Data Analysis
+2. Perform Data Pre-Processing
+3. Modeling Machine Learning
+4. Determining the Best Model
+
+The best model will be saved as best_model_churn.pkl file for model deployment purposes.
 
 This is a demo of customer churn prediction on dqlab telco
-
 
 You can access it at :
 https://dqlab-customer-churn-prediction.streamlit.app/
